@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#musicplayer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-image: url(./music/orange\ wallpaper.jpeg); */
+    /* filter: blur(5px); */
+    background: linear-gradient(hotpink, goldenrod);
+
+}
+
+#musicimage{
+    height: 150px;
+    width:150px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px green;
+}
+
+#music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px red;
+    background-color: white;
+}
+#playoption{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#details{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    flex-direction: column;
+}
+
+#music_time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    gap: 170px;
+}
+
+#player_progress{
+    background-color: #c6bfbf;
+    border-radius: 5px;
+    height: 6px;
+    width: 90%;
+    margin: 40px 20px 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+#progress{
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: all 0.5s linear;
+}
+
+@media screen and (max-width: 768px) {
+
+    #musicplayer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #music_time{
+        gap: 100px;
+    }
+    
+   
+}
